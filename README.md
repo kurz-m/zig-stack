@@ -12,7 +12,8 @@ The implemented methods are the ones used by a regular stack.
 
 ```zig
 const std = @import("std");
-const Stack = @import("stack.zig").Stack;
+const data_structures = @import("data_structures.zig");
+const Stack = data_structures.Stack;
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
